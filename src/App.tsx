@@ -1,34 +1,30 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
+    <div className="poem-container">
+      <h1>A Cat's Tale</h1>
+      <div className="poem">
         <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
+          Whiskers twitching in the night,<br />
+          Golden eyes gleaming bright.<br />
+          Velvet paws that softly creep,<br />
+          While all the world is fast asleep.
+        </p>
+        <p>
+          Graceful hunter, proud and free,<br />
+          Lounging in the window see.<br />
+          Purring softly on my lap,<br />
+          Taking yet another nap.
+        </p>
+        <p>
+          Mystery wrapped in fur so fine,<br />
+          Ancient soul, both yours and mine.<br />
+          Independent, yet so sweet,<br />
+          Making life feel more complete.
         </p>
       </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
+    </div>
   )
 }
 
